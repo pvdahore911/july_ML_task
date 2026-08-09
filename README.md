@@ -1,6 +1,5 @@
 # CND Subsystem - July Task: Telemetry and Data Foundation
 
-**Name:** Prasad D.
 **Station:** Bhubaneswar (IGRA ID `INM00042971`, WMO 42971)
 **Data source:** [NOAA Integrated Global Radiosonde Archive (IGRA)](https://www.ncei.noaa.gov/pub/data/igra/data/data-por/)
 
@@ -46,3 +45,7 @@ Task 2 (web dashboard, Track A) was not attempted.
 - **Single-flight stats:** The raw file contains 50,000+ soundings spanning 1971–2026, so Task 1's required stats (max altitude, temperature variance, pressure delta) are computed on one representative, data-dense recent flight rather than the whole archive, since those metrics only make physical sense per-flight.
 - **Parallelization approach:** Since only one station file was provided, "multiple historical telemetry logs" is implemented by splitting the multi-decade record into year-range chunks and parsing/cleaning each chunk in a separate process via `ProcessPoolExecutor`, then concatenating and serializing to Parquet.
 - **Regression feature choice:** Task 3 / Level 2 regresses altitude on `log(pressure)` rather than raw pressure, since pressure falls off roughly exponentially with altitude (the barometric formula)- this tracks the true physics far better than a plain linear fit.
+
+##  Author
+
+**Prasad Dahore**
