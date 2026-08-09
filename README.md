@@ -1,6 +1,6 @@
-# CND Subsystem — July Task: Telemetry and Data Foundation
+# CND Subsystem - July Task: Telemetry and Data Foundation
 
-**Name:** _[your name here]_
+**Name:** Prasad D.
 **Station:** Bhubaneswar (IGRA ID `INM00042971`, WMO 42971)
 **Data source:** [NOAA Integrated Global Radiosonde Archive (IGRA)](https://www.ncei.noaa.gov/pub/data/igra/data/data-por/)
 
