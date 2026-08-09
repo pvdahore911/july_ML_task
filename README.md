@@ -29,6 +29,7 @@ Task 2 (web dashboard, Track A) was not attempted.
 1. Download the station data file from NOAA:
    `https://www.ncei.noaa.gov/pub/data/igra/data/data-por/INM00042971-data.txt.zip`
    Unzip it so `INM00042971-data.txt` sits in the same folder as the notebooks.
+   I have also uploaded those data files in the same repository.
 
 2. Install dependencies:
    ```
